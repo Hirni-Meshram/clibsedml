@@ -1,20 +1,23 @@
 version: ~> 1.0
 
 dist: xenial
+group: edge
+virt: lxd
 
 language: c
 
 arch:
   - amd64
   - arm64
-  - ppc64le
-  - s390x
+  - arm64-graviton2
+#  - ppc64le
+#  - s390x
 
 cache: ccache
 
 os:
   - linux
-  - osx
+#  - osx
 
 env:
   global:
